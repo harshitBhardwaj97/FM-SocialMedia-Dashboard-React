@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .toggle__btn {
+    @apply bg-primaryToggle w-[70px] p-[5px] cursor-pointer
+  }
+
+  .switch {
+    @apply bg-yellow-400 h-[25px] rounded-[50%] w-[25px]
+  }
+
+  .switch__right {
+    @apply ml-[35px] bg-veryDarkBlue h-[25px] rounded-[50%] w-[25px]
+  }
+}
+
+/*
+.toggle__btn {
+    background: blue;
+    border-radius: 30% / 60%;
+    width: 70px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.switch {
+    margin-left: unset;
+    background-color: yellow;
+    height: 25px;
+    border-radius: 50%;
+    width: 25px;
+    transition: 0.3s;
+}
+
+.switch__right {
+    margin-left: 35px;
+    background-color: yellow;
+    height: 25px;
+    border-radius: 50%;
+    width: 25px;
+}
+
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}

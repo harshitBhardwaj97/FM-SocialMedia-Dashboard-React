@@ -8,6 +8,7 @@
 // import Down from "../images/icon-down.svg";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import SocialHandle from "./components/SocialHandle";
 import Overview from "./components/Overview";
 
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <>
-      <div className={`container mx-auto max-w-7xl`}>
+      <div className={`container mx-auto my-2 max-w-7xl`}>
         <Header totalfollowers={totalCount} />
 
         <div className="top__section cursor-pointer lg:flex items-center justify-between md:grid md:grid-cols-2 md:gap-2 mx-auto p-4 grid grid-cols-1 gap-3">
@@ -41,8 +42,8 @@ function App() {
           ))}
         </div>
 
-        <div className="overview__heading p-4 text-3xl font-bold my-2">
-          OVERVIEW TODAY
+        <div className="overview__heading p-4 text-2xl font-bold my-2 md:text-3xl bg-lightGrayishBlue">
+          <div className="flex items-center justify-center md:block">OVERVIEW TODAY</div>
         </div>
 
         <div className="overview__section grid items-center justify-center lg:grid-cols-4 md:grid-cols-2 gap-2">
@@ -58,6 +59,7 @@ function App() {
             </div>
           ))}
         </div>
+        <Footer />
       </div>
     </>
   );

@@ -8,11 +8,12 @@ const SocialHandle = ({
   deltaicon,
   socialhandle,
 }) => {
+  /*
   let borderColor;
 
   switch (socialhandle) {
     case "instagram":
-      borderColor = `red-600`;
+      borderColor = `primaryInstagram`;
       break;
 
     case "facebook":
@@ -20,24 +21,27 @@ const SocialHandle = ({
       break;
 
     case "twitter":
-      borderColor = `blue-400`;
+      borderColor = `primaryTwitter`;
       break;
 
     case "youtube":
       borderColor = `primaryYoutube`;
       break;
   }
+  */
 
   return (
     <>
-      <div className={`w-[200px] h-[170px] md:w-[250px] md:h-[230px] p-4 m-4  rounded-lg   bg-lightGrayishBlue hover:bg-blue-200 ease-linear duration-150 flex flex-col items-center justify-between border-${borderColor} border-t-4`}>
+      <div
+        className={`w-[200px] h-[170px] md:w-[250px] md:h-[230px] p-4 m-4  rounded-lg   bg-lightGrayishBlue hover:bg-blue-200 ease-linear duration-150 flex flex-col items-center justify-between hover:border-t-4 hover:border-red-600 shadow-md shadow-blue-400 hover:shadow-lg hover:shadow-blue-700`}
+      >
         <div className="info flex items-center justify-center font-bold gap-2">
           <img src={image} alt={image} />
           <p>@{mention}</p>
         </div>
         <div className="followers">
           <div className="followers__info text-center">
-            <p className="text-4xl font-bold">{followers}</p>
+            <p className="text-4xl font-bold">{followers.toLocaleString()}</p>
             <p className="uppercase">
               {socialhandle.toLowerCase().includes("youtube")
                 ? "SUBSCRIBERS"
@@ -47,7 +51,7 @@ const SocialHandle = ({
         </div>
         <div
           className={
-            deltaicon === "../images/icon-up.svg"
+            deltaicon === "/icon-up.svg"
               ? `delta__info text-center text-green-500`
               : `delta__info text-center text-red-500`
           }

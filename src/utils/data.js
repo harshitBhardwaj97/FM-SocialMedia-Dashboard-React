@@ -1,6 +1,7 @@
 const socialMediaData = [
   {
     mention: "nathanf",
+
     image: "/icon-facebook.svg",
     followers: 1987,
     deltacount: 12,
@@ -9,6 +10,7 @@ const socialMediaData = [
   },
   {
     mention: "nathanf",
+
     image: "/icon-twitter.svg",
     followers: 1044,
     deltacount: 99,

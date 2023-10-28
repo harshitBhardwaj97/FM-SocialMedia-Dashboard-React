@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState,useEffect } from "react";
 
 const ThemeToggle = () => {
   const [isLightMode, setIsLightMode] = useState(true);
@@ -7,9 +7,19 @@ const ThemeToggle = () => {
     setIsLightMode(!isLightMode);
   };
 
+  useEffect(() => {
+    if (isLightMode) {
+      document.querySelector("html").classList.remove("dark");
+    }
+
+    if (!isLightMode) {
+      document.querySelector("html").classList.add("dark");
+    }
+  }, [isLightMode]);
+
   return (
     <>
-      <div className="mode font-bold">
+      <div className="mode font-bold dark:text-white">
         {isLightMode ? "Light Mode" : "Dark Mode"}
       </div>
       <div

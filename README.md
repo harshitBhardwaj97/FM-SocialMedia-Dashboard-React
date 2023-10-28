@@ -23,10 +23,10 @@ Also for the first time I deployed a React Application on Netifly, so that was a
 ## Screenshots
 
 <p align="center">
-    <img src="https://spontaneous-pony-a7e771.netlify.app/desktop.png" alt="Desktop">
+    <img src="https://socialmedia-dashboard-react-fm.netlify.app/desktop.png" alt="Desktop">
 </p>
 <p align="center">
-    <img src="https://spontaneous-pony-a7e771.netlify.app/mobile.png" alt="Mobile">
+    <img src="https://socialmedia-dashboard-react-fm.netlify.app/mobile.png" alt="Mobile">
 </p>
 
 ## Todo

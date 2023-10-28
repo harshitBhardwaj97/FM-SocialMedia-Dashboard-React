@@ -33,7 +33,7 @@ const SocialHandle = ({
   return (
     <>
       <div
-        className={`w-[200px] h-[170px] md:w-[250px] md:h-[230px] p-4 m-4  rounded-lg   bg-lightGrayishBlue hover:bg-blue-200 ease-linear duration-150 flex flex-col items-center justify-between hover:border-t-4 hover:border-red-600 shadow-md shadow-blue-400 hover:shadow-lg hover:shadow-blue-700`}
+        className={`w-[200px] h-[170px] md:w-[250px] md:h-[230px] p-3 m-3 rounded-lg bg-lightGrayishBlue hover:bg-blue-200 ease-linear duration-150 flex flex-col items-center justify-between hover:border-t-4 hover:border-red-600 shadow-md shadow-blue-400 hover:shadow-lg hover:shadow-blue-700 dark:shadow-white/30 dark:hover:shadow-white/60 dark:bg-[#252B43] dark:hover:bg-[#333A56] dark:text-[#8089B0]`}
       >
         <div className="info flex items-center justify-center font-bold gap-2">
           <img src={image} alt={image} />
@@ -41,7 +41,7 @@ const SocialHandle = ({
         </div>
         <div className="followers">
           <div className="followers__info text-center">
-            <p className="text-4xl font-bold">{followers.toLocaleString()}</p>
+            <p className="text-4xl font-bold dark:text-white">{followers.toLocaleString()}</p>
             <p className="uppercase">
               {socialhandle.toLowerCase().includes("youtube")
                 ? "SUBSCRIBERS"

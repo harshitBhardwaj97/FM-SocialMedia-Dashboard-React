@@ -31,7 +31,7 @@ Also for the first time I deployed a React Application on Netifly, so that was a
 
 ## Todo
 
-  1. Implement Dark mode (Button fucntionality already implemented and working)
+  ~1. Implement Dark mode (Button fucntionality already implemented and working)~ Dark mode implemented and working.
 
 
 
